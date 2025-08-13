@@ -64,15 +64,17 @@ function Slider() {
       loop={true}
       navigation={true}
       modules={[Navigation]}
-      className="w-full h-full"
+      className="absolute top-0 left-0 w-full h-screen z-10"
     >
       {swiperItems.map((item) => (
         <SwiperSlide
           key={item.id}
-          className="text-center bg-cover bg-no-repeat bg-center "
-          style={{ backgroundImage: `url(${item.url})` }}
+          className="text-center bg-cover bg-center"
         >
-          <div className="flex flex-col justify-center items-center h-full bg-black bg-opacity-50 p-8">
+          <div
+            className="flex flex-col justify-center items-center bg-cover bg-opacity-50 p-8 bg-no-repeat h-full w-full"
+            style={{ backgroundImage: `url(${item.url})` }}
+          >
             <h2 className="text-primary font-medium">{item.uptitle}</h2>
             <h1 className="text-white text-4xl font-bold">{item.mainTitle}</h1>
             <h2 className="text-white text-lg">{item.subtitle}</h2>

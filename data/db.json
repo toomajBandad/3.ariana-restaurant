@@ -1,0 +1,193 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "title": "Black Coffee",
+      "price": 5,
+      "desc": "Bold and aromatic, brewed from freshly ground beans for a pure caffeine kick.",
+      "score": 5,
+      "off": 0,
+      "type": "hot",
+      "img": "/images/menu-1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Hot Chocolate",
+      "price": 4,
+      "desc": "Rich and creamy cocoa blended with steamed milk, topped with whipped cream.",
+      "score": 4.4,
+      "off": 0,
+      "type": "hot",
+      "img": "/images/menu-2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Vanilla Ice Cream",
+      "price": 6,
+      "desc": "Classic vanilla ice cream made with real cream and Madagascar vanilla beans.",
+      "score": 4.9,
+      "off": 0,
+      "type": "cold",
+      "img": "/images/menu-3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Herbal Tea",
+      "price": 3,
+      "desc": "A calming blend of chamomile, mint, and lemongrass—perfect for unwinding.",
+      "score": 5,
+      "off": 0,
+      "type": "hot",
+      "img": "/images/menu-4.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Chocolate Milk",
+      "price": 4,
+      "desc": "Smooth chocolate milk made with organic cocoa and fresh dairy.",
+      "score": 3.1,
+      "off": 50,
+      "type": "cold",
+      "img": "/images/menu-5.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Banana Milk",
+      "price": 12,
+      "desc": "Sweet banana blended with chilled milk for a refreshing tropical treat.",
+      "score": 4.9,
+      "off": 0,
+      "type": "cold",
+      "img": "/images/menu-6.jpeg"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "Fastest Door Delivery",
+      "desc": "Get your favorite drinks and treats delivered to your doorstep in under 30 minutes.",
+      "img": "/images/service-1.jpg",
+      "icon": "faTruck"
+    },
+    {
+      "id": 2,
+      "title": "Premium Coffee Beans",
+      "desc": "We source our beans from top farms around the world for unmatched flavor and freshness.",
+      "img": "/images/service-2.jpg",
+      "icon": "faCoffee"
+    },
+    {
+      "id": 3,
+      "title": "Award-Winning Quality",
+      "desc": "Recognized by local and international barista competitions for excellence in taste.",
+      "img": "/images/service-3.jpg",
+      "icon": "faAward"
+    },
+    {
+      "id": 4,
+      "title": "Online Table Booking",
+      "desc": "Reserve your favorite spot in seconds—no waiting, no hassle.",
+      "img": "/images/service-4.jpg",
+      "icon": "faTable"
+    }
+  ],
+  "newsletters": [
+    {
+      "id": 2,
+      "email": "amin@gmail.com"
+    },
+    {
+      "id": 1,
+      "email": "amin@gmail.com"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "username": "Ashley_Locia",
+      "productID": 1,
+      "body": "I really love these coffees",
+      "profile": "/images/testimonial-1.jpg"
+    },
+    {
+      "id": 2,
+      "username": "Luca_Brew",
+      "productID": 2,
+      "body": "The espresso was bold and rich—just how I like it. Great job!",
+      "profile": "/images/testimonial-2.jpg"
+    },
+    {
+      "id": 3,
+      "username": "Sofi_Mornings",
+      "productID": 3,
+      "body": "This latte is my new morning ritual. Creamy, smooth, and comforting",
+      "profile": "/images/testimonial-3.jpg"
+    },
+    {
+      "id": 4,
+      "username": "Tomás_R",
+      "productID": 4,
+      "body": "I wasn’t expecting much, but the cold brew blew me away. Super refreshing!",
+      "profile": "/images/testimonial-4.jpg"
+    },
+    {
+      "id": 5,
+      "username": "NinaBean",
+      "productID": 5,
+      "body": "The mocha had the perfect balance of chocolate and coffee. Loved it!",
+      "profile": "/images/testimonial-5.jpg"
+    },
+    {
+      "id": 6,
+      "username": "Elena Martínez",
+      "productID": 1,
+      "body": "I ordered the Black Coffee and it was exactly what I needed—strong, smooth, and full of flavor. Definitely coming back for more!",
+      "profile": "/images/testimonial-6.jpg"
+    }
+  ],
+  "messages": [
+    {
+      "username": "Isabel_Cruz",
+      "email": "isabel.cruz@example.com",
+      "subject": "Inquiry about delivery times",
+      "body": "Hi, I placed an order yesterday and was wondering how long it usually takes to arrive in Madrid. Thanks!",
+      "id": 1
+    },
+    {
+      "username": "MarcoVino",
+      "email": "marco.vino@example.com",
+      "subject": "Issue with payment",
+      "body": "Hello, I tried to pay with my card but it keeps getting declined. Can you help me resolve this?",
+      "id": 2
+    },
+    {
+      "username": "Lena_Art",
+      "email": "lena.art@example.com",
+      "subject": "Feedback on your espresso",
+      "body": "Just wanted to say your espresso is phenomenal. Rich, smooth, and exactly what I needed this morning!",
+      "id": 3
+    },
+    {
+      "username": "Tomás_R",
+      "email": "tomas.r@example.com",
+      "subject": "Request for invoice",
+      "body": "Could you please send me the invoice for my last order? I need it for my records.",
+      "id": 4
+    },
+    {
+      "username": "NinaBean",
+      "email": "nina.bean@example.com",
+      "subject": "Suggestion for new flavors",
+      "body": "Have you considered adding hazelnut or coconut to your menu? I think they'd be a hit!",
+      "id": 5
+    },
+    {
+      "username": "Elena Martínez",
+      "email": "elena.martinez@example.com",
+      "subject": "Loved the Black Coffee!",
+      "body": "Just wanted to say thank you—the Black Coffee was perfect. I’ll definitely be ordering again soon.",
+      "id": 6
+    }
+  ],
+  "reserve": [{}]
+}
