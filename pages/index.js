@@ -1,15 +1,11 @@
 import React from "react";
-
-// import Offer from "@/components/templates/Index/Offer";
-// import Menu from "@/components/templates/Index/Menu";
-// import Reservation from "@/components/templates/Index/reservation";
-// import Testimonials from "@/components/templates/Index/Testimonials";
-
 import About from "@/components/templates/Index/About";
 import Services from "@/components/templates/Index/Services";
 import Slider from "@/components/templates/Index/Slider";
 import Offer from "@/components/templates/Index/Offer";
 import Menu from "@/components/templates/Index/Menu";
+import Reservation from "@/components/templates/Index/Reservation";
+import Testimonials from "@/components/templates/Index/Testimonial";
 
 function Index({ data }) {
   return (
@@ -19,8 +15,8 @@ function Index({ data }) {
       <Services services={data.services} />
       <Offer />
       <Menu data={data.menu} />
-      {/* <Reservation /> */}
-      {/* <Testimonials data={data.comments} /> */}
+      <Reservation />
+      <Testimonials data={data.comments} />
     </>
   );
 }
