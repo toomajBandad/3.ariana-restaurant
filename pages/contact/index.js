@@ -5,7 +5,7 @@ import React from "react";
 function Contact() {
   return (
     <>
-      <PageHeader route="Contact" />
+      <PageHeader route="Contact" bg="/images/darkTop.png"/>
       <ContactDetails />
     </>
   );

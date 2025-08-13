@@ -5,7 +5,7 @@ import React from "react";
 function Reservation() {
   return (
     <>
-      <PageHeader route="Reservation" />
+      <PageHeader route="Reservation" bg="/images/darkTop.png"/>
       <ReservationDetail />
     </>
   );

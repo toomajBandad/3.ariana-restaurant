@@ -1,15 +1,8 @@
 import React from "react";
-// import styles from "@/styles/Slider.module.css";
-
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-
-// import required modules
-import { Navigation } from "swiper/modules";
 
 function Slider() {
   const swiperItems = [
@@ -59,6 +52,7 @@ function Slider() {
       justify: "center",
     },
   ];
+
   return (
     <Swiper
       loop={true}
@@ -67,17 +61,28 @@ function Slider() {
       className="absolute top-0 left-0 w-full h-screen z-10"
     >
       {swiperItems.map((item) => (
-        <SwiperSlide
-          key={item.id}
-          className="text-center bg-cover bg-center"
-        >
-          <div
-            className="flex flex-col justify-center items-center bg-cover bg-opacity-50 p-8 bg-no-repeat h-full w-full"
-            style={{ backgroundImage: `url(${item.url})` }}
-          >
-            <h2 className="text-primary font-medium">{item.uptitle}</h2>
-            <h1 className="text-white text-4xl font-bold">{item.mainTitle}</h1>
-            <h2 className="text-white text-lg">{item.subtitle}</h2>
+        <SwiperSlide key={item.id}>
+          <div className="relative w-full h-screen p-40">
+            {/* Background Image */}
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${item.url})` }}
+            ></div>
+
+            {/* Text Content */}
+            <div
+              className={`relative z-10 flex flex-col items-${item.align} justify-${item.justify} h-full w-full px-8 md:px-16 text-white transition-opacity duration-700`}
+            >
+              <h2 className="text-sm md:text-lg font-medium mb-2 tracking-wide">
+                {item.uptitle}
+              </h2>
+              <h1 className="text-4xl md:text-6xl font-extrabold mb-2 tracking-wider drop-shadow-lg">
+                {item.mainTitle}
+              </h1>
+              <h2 className="text-md md:text-xl font-light tracking-widest">
+                {item.subtitle}
+              </h2>
+            </div>
           </div>
         </SwiperSlide>
       ))}

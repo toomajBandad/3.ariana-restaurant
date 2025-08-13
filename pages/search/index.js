@@ -5,7 +5,7 @@ import React from "react";
 function Search({ data }) {
   return (
     <>
-      <PageHeader route="Search" />
+      <PageHeader route="Search" bg="/images/darkTop.png"/>
       <Result searchResult={data} />
     </>
   );

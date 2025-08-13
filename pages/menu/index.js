@@ -5,7 +5,7 @@ import React from "react";
 function Menu({ menu }) {
   return (
     <>
-      <PageHeader route="Menu" />
+      <PageHeader route="Menu" bg="/images/darkTop.png"/>
       <Pricing data={menu} />
     </>
   );

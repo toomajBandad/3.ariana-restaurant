@@ -5,7 +5,7 @@ import React from "react";
 function Services({ services }) {
   return (
     <>
-      <PageHeader route="Services" />
+      <PageHeader route="Services" bg="/images/darkTop.png"/>
       <ServicesDetails data={services} />
     </>
   );

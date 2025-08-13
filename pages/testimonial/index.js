@@ -5,7 +5,7 @@ import React from "react";
 function Testimonial({ comments }) {
   return (
     <>
-      <PageHeader route="Testimonial" />
+      <PageHeader route="Testimonial" bg="/images/darkTop.png"/>
       <Comments data={comments} />
     </>
   );

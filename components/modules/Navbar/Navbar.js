@@ -33,7 +33,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="absolute top-0 left-0 w-full z-50 text-white" style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}>
+    <div className="absolute top-0 left-0 w-full z-50 text-white bg-trans">
       <div className="flex justify-between items-center px-10 py-5">
         <div className="flex justify-start items-center gap-5">
           <div className="text-5xl">NEXT</div>

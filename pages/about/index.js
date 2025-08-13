@@ -5,7 +5,7 @@ import React from "react";
 function About() {
   return (
     <>
-      <PageHeader route="About" />
+      <PageHeader route="About" bg="/images/darkTop.png" />
       <Story />
     </>
   );
