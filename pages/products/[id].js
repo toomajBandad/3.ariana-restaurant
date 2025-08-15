@@ -1,15 +1,26 @@
 import Comments from "@/components/templates/Product/Comments";
 import ProductsDetails from "@/components/templates/Product/ProductDetails";
+import PageHeader from "@/components/modules/PageHeader/PageHeader";
 
 const Product = ({ product, comments }) => {
   return (
-    <main className="bg-white text-gray-800">
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <ProductsDetails data={product} />
+    <main className="bg-gray-100 text-gray-900">
+      {/* Page Header */}
+      <PageHeader route="Dish Details" bg="/images/darkTop.png" />
+
+      {/* Product Details Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="bg-white rounded-xl shadow-lg p-8">
+          <ProductsDetails data={product} />
+        </div>
       </section>
 
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
-        <Comments data={comments} />
+      {/* Comments Section */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-300">
+        <div className="bg-white rounded-xl shadow-md p-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">Customer Reviews</h2>
+          <Comments data={comments} />
+        </div>
       </section>
     </main>
   );
