@@ -58,7 +58,7 @@ function Slider() {
       loop={true}
       navigation={true}
       modules={[Navigation]}
-      className="absolute top-0 left-0 w-full h-screen z-10"
+      className="absolute top-0 left-0 w-full h-screen z-10 "
     >
       {swiperItems.map((item) => (
         <SwiperSlide key={item.id}>

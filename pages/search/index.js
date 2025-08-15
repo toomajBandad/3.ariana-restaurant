@@ -19,7 +19,7 @@ export async function getServerSideProps(context) {
 
   const searchResult = data.filter(
     (item) =>
-      item.type.toLowerCase().includes(query.q.toLowerCase()) ||
+      item.category.toLowerCase().includes(query.q.toLowerCase()) ||
       item.title.toLowerCase().includes(query.q.toLowerCase())
   );
 

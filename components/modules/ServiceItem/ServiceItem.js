@@ -12,7 +12,7 @@ function ServiceItem({ title, desc, img, icon }) {
         </div>
         <div className="sm:w-3/5 w-full">
           <div className="flex items-center gap-3 mb-2">
-            <div className="bg-[#da9f5b] rounded-full h-9 w-10 flex items-center justify-center text-white text-lg">
+            <div className="bg-[#da9f5b] rounded-full h-10 w-10 flex items-center justify-center text-white text-2xl p-0">
               {IconComponent ? <IconComponent /> : <MdIcons.MdInsertEmoticon />}
             </div>
             <h4 className="text-lg font-semibold text-gray-800">{title}</h4>
