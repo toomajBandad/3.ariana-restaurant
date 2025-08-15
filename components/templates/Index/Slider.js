@@ -10,7 +10,7 @@ function Slider() {
       id: 1,
       url: "/images/carousel-1.jpg",
       uptitle: "A legacy of flavor",
-      mainTitle: "NEXT",
+      mainTitle: "ARIANA",
       subtitle: "SINCE 1986",
       align: "center",
       justify: "start",
@@ -19,7 +19,7 @@ function Slider() {
       id: 2,
       url: "/images/carousel-2.jpg",
       uptitle: "Crafting culinary memories",
-      mainTitle: "NEXT",
+      mainTitle: "ARIANA",
       subtitle: "SINCE 1986",
       align: "start",
       justify: "start",
@@ -28,7 +28,7 @@ function Slider() {
       id: 3,
       url: "/images/carousel-3.jpg",
       uptitle: "Where timeless taste",
-      mainTitle: "NEXT",
+      mainTitle: "ARIANA",
       subtitle: "SINCE 1986",
       align: "end",
       justify: "end",
@@ -37,7 +37,7 @@ function Slider() {
       id: 4,
       url: "/images/carousel-4.jpg",
       uptitle: "Serving tradition",
-      mainTitle: "NEXT",
+      mainTitle: "ARIANA",
       subtitle: "SINCE 1986",
       align: "end",
       justify: "start",
@@ -46,7 +46,7 @@ function Slider() {
       id: 5,
       url: "/images/carousel-5.jpg",
       uptitle: "Seasoned with love",
-      mainTitle: "NEXT",
+      mainTitle: "ARIANA",
       subtitle: "SINCE 1986",
       align: "center",
       justify: "center",
@@ -62,7 +62,7 @@ function Slider() {
     >
       {swiperItems.map((item) => (
         <SwiperSlide key={item.id}>
-          <div className="relative w-full h-screen p-40">
+          <div className="relative w-full h-full p-40">
             {/* Background Image */}
             <div
               className="absolute inset-0 bg-cover bg-center"
@@ -73,7 +73,7 @@ function Slider() {
             <div
               className={`relative z-10 flex flex-col items-${item.align} justify-${item.justify} h-full w-full px-8 md:px-16 text-white transition-opacity duration-700`}
             >
-              <h2 className="text-sm md:text-lg font-medium mb-2 tracking-wide">
+              <h2 className="text-sm md:text-lg font-medium mb-2 tracking-wide ">
                 {item.uptitle}
               </h2>
               <h1 className="text-4xl md:text-6xl font-extrabold mb-2 tracking-wider drop-shadow-lg">

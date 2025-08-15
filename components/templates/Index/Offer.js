@@ -21,27 +21,40 @@ function Offer() {
   };
 
   return (
-    <div className="relative bg-gradient-to-b from-black/60 to-black/80 py-20 text-center">
-      <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl font-extrabold text-primary mb-4">50% OFF</h1>
-        <h1 className="text-3xl text-white font-bold mb-3">Sunday Special Offer</h1>
-        <h4 className="text-white font-normal mb-6">
-          Only for Sunday from 1st Jan to 30th Jan 2045
-        </h4>
+    <div className="relative py-40 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
+      {/* Blurred background image */}
+      <div className="absolute inset-0 bg-[url('/images/offer-bg.jpg')] bg-cover bg-center blur-sm"></div>
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      {/* Foreground content */}
+      <div className="relative z-10 max-w-3xl mx-auto">
+        <h1 className="text-5xl sm:text-6xl font-extrabold text-[#da9f5b] mb-4 tracking-tight">
+          50% OFF
+        </h1>
+        <h2 className="text-3xl sm:text-4xl text-white font-bold mb-3">
+          Sunday Special Offer
+        </h2>
+        <p className="text-white/80 mb-8 text-sm sm:text-base">
+          Only on Sundays from 1st Jan to 30th Jan 2045. Don’t miss out!
+        </p>
+
         <form
           onSubmit={addEmail}
           className="flex flex-col sm:flex-row justify-center items-center gap-4"
         >
           <input
-            type="text"
-            placeholder="Your Email"
+            type="email"
+            placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full sm:w-auto px-4 py-3 rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary"
+            className="w-full sm:w-72 px-4 py-3 rounded-md bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#da9f5b] transition"
+            required
           />
           <button
             type="submit"
-            className="bg-primary text-white font-bold px-6 py-3 rounded-md hover:bg-primary-dark transition"
+            className="bg-[#da9f5b] hover:bg-[#c88a4a] text-white font-semibold px-6 py-3 rounded-md transition duration-300 cursor-pointer"
           >
             JOIN
           </button>

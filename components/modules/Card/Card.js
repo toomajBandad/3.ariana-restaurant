@@ -8,9 +8,8 @@ function Card({ title, desc, price, img, id }) {
         <img
           src={img}
           alt={title}
-          className="w-full h-auto rounded-full mb-3 sm:mb-0"
+          className="w-full h-auto rounded-md mb-3 sm:mb-0"
         />
-        <h5 className="text-primary font-bold text-center mt-2">${price}</h5>
       </div>
       <div className="flex-grow">
         <Link href={`/products/${id}`}>
@@ -19,6 +18,7 @@ function Card({ title, desc, price, img, id }) {
           </h4>
         </Link>
         <p className="text-gray-600 mt-1">{desc}</p>
+        <h5 className="text-primary font-bold mt-2">${price}</h5>
       </div>
     </div>
   );

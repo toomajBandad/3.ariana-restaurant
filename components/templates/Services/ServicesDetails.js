@@ -3,7 +3,7 @@ import React from "react";
 
 function ServicesDetails({ data }) {
   return (
-    <div className="pt-20 px-4">
+    <div className="pt-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h4 className="text-primary uppercase tracking-widest text-lg">
@@ -13,7 +13,7 @@ function ServicesDetails({ data }) {
             Fresh & Organic Beans
           </h1>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {data.map((service) => (
             <ServiceItem key={service.id} {...service} />
           ))}

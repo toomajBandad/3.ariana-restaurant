@@ -10,7 +10,7 @@ function Services({ services }) {
             Our Services
           </h4>
           <h1 className="text-4xl font-extrabold text-gray-900 mt-2">
-            Fresh & Organic Beans
+            Fresh & Organic Dishes
           </h1>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">

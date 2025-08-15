@@ -38,7 +38,7 @@ function About() {
           {/* Image */}
           <div className="relative min-h-[500px]">
             <img
-              src="/images/about.png"
+              src="/images/about.jpg"
               alt="About"
               className="absolute inset-0 w-full h-full object-cover"
             />

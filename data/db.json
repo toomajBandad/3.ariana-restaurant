@@ -2,93 +2,333 @@
   "menu": [
     {
       "id": 1,
-      "title": "Black Coffee",
-      "price": 5,
-      "desc": "Bold and aromatic, brewed from freshly ground beans for a pure caffeine kick.",
-      "score": 5,
-      "off": 0,
-      "type": "hot",
-      "img": "/images/menu-1.jpg"
+      "title": "Truffle Tagliatelle",
+      "price": 14.5,
+      "desc": "Silky tagliatelle tossed in a creamy truffle sauce with wild mushrooms.",
+      "score": 4.6,
+      "off": 10,
+      "category": "pasta",
+      "img": "/images/pasta/truffle.jpg"
     },
     {
       "id": 2,
-      "title": "Hot Chocolate",
-      "price": 4,
-      "desc": "Rich and creamy cocoa blended with steamed milk, topped with whipped cream.",
+      "title": "Spicy Arrabbiata",
+      "price": 11.0,
+      "desc": "Penne in a fiery tomato and garlic sauce, finished with fresh basil.",
       "score": 4.4,
       "off": 0,
-      "type": "hot",
-      "img": "/images/menu-2.jpg"
+      "category": "pasta",
+      "img": "/images/pasta/arrabbiata.jpg"
     },
     {
       "id": 3,
-      "title": "Vanilla Ice Cream",
-      "price": 6,
-      "desc": "Classic vanilla ice cream made with real cream and Madagascar vanilla beans.",
-      "score": 4.9,
-      "off": 0,
-      "type": "cold",
-      "img": "/images/menu-3.jpg"
+      "title": "Carbonara Classico",
+      "price": 13.0,
+      "desc": "Authentic Roman recipe with guanciale, egg yolk, Pecorino Romano, no cream.",
+      "score": 4.8,
+      "off": 15,
+      "category": "pasta",
+      "img": "/images/pasta/carbonara.jpg"
     },
     {
       "id": 4,
-      "title": "Herbal Tea",
-      "price": 3,
-      "desc": "A calming blend of chamomile, mint, and lemongrass—perfect for unwinding.",
-      "score": 5,
-      "off": 0,
-      "type": "hot",
-      "img": "/images/menu-4.jpeg"
+      "title": "Pesto Genovese",
+      "price": 12.0,
+      "desc": "Fresh basil pesto over trofie pasta, garnished with pine nuts and Parmigiano.",
+      "score": 4.5,
+      "off": 5,
+      "category": "pasta",
+      "img": "/images/pasta/pesto.jpg"
     },
     {
       "id": 5,
-      "title": "Chocolate Milk",
-      "price": 4,
-      "desc": "Smooth chocolate milk made with organic cocoa and fresh dairy.",
-      "score": 3.1,
-      "off": 50,
-      "type": "cold",
-      "img": "/images/menu-5.jpeg"
+      "title": "Lobster Linguine",
+      "price": 18.0,
+      "desc": "Linguine with chunks of lobster in a garlic white wine sauce.",
+      "score": 4.8,
+      "off": 20,
+      "category": "pasta",
+      "img": "/images/pasta/lobster.jpg"
     },
     {
       "id": 6,
-      "title": "Banana Milk",
-      "price": 12,
-      "desc": "Sweet banana blended with chilled milk for a refreshing tropical treat.",
+      "title": "Pumpkin Ravioli",
+      "price": 13.5,
+      "desc": "Handmade ravioli filled with roasted pumpkin, served in sage butter sauce.",
+      "score": 4.5,
+      "off": 8,
+      "category": "pasta",
+      "img": "/images/pasta/pumpkin.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Margherita",
+      "price": 9.0,
+      "desc": "Classic Neapolitan pizza with San Marzano tomatoes, mozzarella, and fresh basil.",
+      "score": 4.7,
+      "off": 5,
+      "category": "pizza",
+      "img": "/images/pizza/margherita.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Pepperoni Inferno",
+      "price": 11.5,
+      "desc": "Loaded with spicy pepperoni, mozzarella, and a touch of chili oil.",
+      "score": 4.6,
+      "off": 10,
+      "category": "pizza",
+      "img": "/images/pizza/pepperoni.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Quattro Formaggi",
+      "price": 12.0,
+      "desc": "A rich blend of mozzarella, gorgonzola, Parmigiano, and fontina cheeses.",
+      "score": 4.8,
+      "off": 0,
+      "category": "pizza",
+      "img": "/images/pizza/quattro.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Veggie Supreme",
+      "price": 10.5,
+      "desc": "Topped with bell peppers, olives, onions, mushrooms, and zucchini.",
+      "score": 4.4,
+      "off": 12,
+      "category": "pizza",
+      "img": "/images/pizza/veggie.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Prosciutto e Rucola",
+      "price": 13.0,
+      "desc": "Thinly sliced prosciutto with fresh arugula and shaved Parmigiano.",
+      "score": 4.9,
+      "off": 7,
+      "category": "pizza",
+      "img": "/images/pizza/prosciutto.jpg"
+    },
+    {
+      "id": 12,
+      "title": "BBQ Chicken",
+      "price": 12.5,
+      "desc": "Grilled chicken, smoky BBQ sauce, red onions, and mozzarella.",
+      "score": 4.5,
+      "off": 3,
+      "category": "pizza",
+      "img": "/images/pizza/bbq.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Grilled Salmon",
+      "price": 17.0,
+      "desc": "Fresh Atlantic salmon grilled to perfection with lemon herb butter.",
+      "score": 4.8,
+      "off": 10,
+      "category": "seafood",
+      "img": "/images/seafood/salmon.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Garlic Butter Shrimp",
+      "price": 15.5,
+      "desc": "Succulent shrimp sautéed in garlic butter and white wine sauce.",
+      "score": 4.6,
+      "off": 5,
+      "category": "seafood",
+      "img": "/images/seafood/shrimp.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Seafood Paella",
+      "price": 19.0,
+      "desc": "Traditional Spanish rice dish with mussels, clams, shrimp, and squid.",
       "score": 4.9,
       "off": 0,
-      "type": "cold",
-      "img": "/images/menu-6.jpeg"
+      "category": "seafood",
+      "img": "/images/seafood/paella.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Lemon Pepper Calamari",
+      "price": 13.5,
+      "desc": "Crispy fried calamari tossed in lemon zest and cracked black pepper.",
+      "score": 4.4,
+      "off": 8,
+      "category": "seafood",
+      "img": "/images/seafood/calamari.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Tuna Tartare",
+      "price": 16.0,
+      "desc": "Diced raw tuna with avocado, sesame oil, and soy-lime dressing.",
+      "score": 4.7,
+      "off": 6,
+      "category": "seafood",
+      "img": "/images/seafood/tartare.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Crab Linguine",
+      "price": 18.5,
+      "desc": "Linguine tossed with sweet crab meat, garlic, chili, and olive oil.",
+      "score": 4.5,
+      "off": 4,
+      "category": "seafood",
+      "img": "/images/seafood/crab.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Tiramisu",
+      "price": 6.5,
+      "desc": "Classic Italian dessert with layers of espresso-soaked ladyfingers and mascarpone cream.",
+      "score": 4.9,
+      "off": 10,
+      "category": "dessert",
+      "img": "/images/dessert/tiramisu.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Chocolate Lava Cake",
+      "price": 7.0,
+      "desc": "Warm chocolate cake with a gooey molten center, served with vanilla ice cream.",
+      "score": 4.8,
+      "off": 5,
+      "category": "dessert",
+      "img": "/images/dessert/lava.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Lemon Tart",
+      "price": 5.5,
+      "desc": "Zesty lemon curd in a buttery shortcrust pastry, topped with powdered sugar.",
+      "score": 4.6,
+      "off": 0,
+      "category": "dessert",
+      "img": "/images/dessert/lemon.jpg"
+    },
+    {
+      "id": 22,
+      "title": "Strawberry Cheesecake",
+      "price": 6.0,
+      "desc": "Creamy cheesecake with a graham cracker crust and fresh strawberry topping.",
+      "score": 4.7,
+      "off": 7,
+      "category": "dessert",
+      "img": "/images/dessert/cheesecake.jpg"
+    },
+    {
+      "id": 23,
+      "title": "Pistachio Gelato",
+      "price": 4.5,
+      "desc": "Rich and nutty pistachio gelato made with authentic Sicilian pistachios.",
+      "score": 4.5,
+      "off": 3,
+      "category": "dessert",
+      "img": "/images/dessert/gelato.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Crème Brûlée",
+      "price": 6.8,
+      "desc": "Silky vanilla custard with a crisp caramelized sugar top.",
+      "score": 4.9,
+      "off": 6,
+      "category": "dessert",
+      "img": "/images/dessert/brulee.jpg"
+    },
+    {
+      "id": 25,
+      "title": "Club Sandwich",
+      "price": 8.5,
+      "desc": "Triple-layered sandwich with turkey, bacon, lettuce, tomato, and mayo on toasted bread.",
+      "score": 4.6,
+      "off": 10,
+      "category": "sandwich",
+      "img": "/images/sandwich/club.jpg"
+    },
+    {
+      "id": 26,
+      "title": "Caprese Panini",
+      "price": 7.0,
+      "desc": "Grilled ciabatta filled with fresh mozzarella, tomatoes, basil, and balsamic glaze.",
+      "score": 4.5,
+      "off": 5,
+      "category": "sandwich",
+      "img": "/images/sandwich/caprese.jpg"
+    },
+    {
+      "id": 27,
+      "title": "Philly Cheesesteak",
+      "price": 9.5,
+      "desc": "Thinly sliced beef, sautéed onions, and melted provolone on a hoagie roll.",
+      "score": 4.7,
+      "off": 0,
+      "category": "sandwich",
+      "img": "/images/sandwich/philly.jpg"
+    },
+    {
+      "id": 28,
+      "title": "Falafel Wrap",
+      "price": 7.5,
+      "desc": "Crispy falafel with hummus, lettuce, tomato, and tahini sauce in a warm pita.",
+      "score": 4.4,
+      "off": 8,
+      "category": "sandwich",
+      "img": "/images/sandwich/falafel.jpg"
+    },
+    {
+      "id": 29,
+      "title": "Pulled Pork Sandwich",
+      "price": 8.8,
+      "desc": "Slow-cooked pulled pork with BBQ sauce and coleslaw on a brioche bun.",
+      "score": 4.6,
+      "off": 6,
+      "category": "sandwich",
+      "img": "/images/sandwich/pulledpork.jpg"
+    },
+    {
+      "id": 30,
+      "title": "Eggplant Parm Sub",
+      "price": 8.0,
+      "desc": "Breaded eggplant slices with marinara and melted mozzarella on a toasted sub roll.",
+      "score": 4.5,
+      "off": 4,
+      "category": "sandwich",
+      "img": "/images/sandwich/eggplant.jpg"
     }
   ],
   "services": [
     {
       "id": 1,
-      "title": "Fastest Door Delivery",
-      "desc": "Get your favorite drinks and treats delivered to your doorstep in under 30 minutes.",
+      "title": "Express Table Service",
+      "desc": "Enjoy swift and attentive service from our trained staff, ensuring a seamless dining experience.",
       "img": "/images/service-1.jpg",
-      "icon": "faTruck"
+      "icon": "MdOutlineRoomService"
     },
     {
       "id": 2,
-      "title": "Premium Coffee Beans",
-      "desc": "We source our beans from top farms around the world for unmatched flavor and freshness.",
+      "title": "Farm-to-Table Ingredients",
+      "desc": "We partner with local farms to bring you fresh, organic produce in every dish.",
       "img": "/images/service-2.jpg",
-      "icon": "faCoffee"
+      "icon": "MdAgriculture"
     },
     {
       "id": 3,
-      "title": "Award-Winning Quality",
-      "desc": "Recognized by local and international barista competitions for excellence in taste.",
+      "title": "Gourmet Chef Specials",
+      "desc": "Indulge in exclusive creations from our award-winning chefs, updated weekly.",
       "img": "/images/service-3.jpg",
-      "icon": "faAward"
+      "icon": "MdRestaurantMenu"
     },
     {
       "id": 4,
-      "title": "Online Table Booking",
-      "desc": "Reserve your favorite spot in seconds—no waiting, no hassle.",
+      "title": "Live Music Nights",
+      "desc": "Join us every weekend for live performances that elevate your dining experience.",
       "img": "/images/service-4.jpg",
-      "icon": "faTable"
+      "icon": "MdMusicNote"
     }
   ],
   "newsletters": [
@@ -104,44 +344,44 @@
   "comments": [
     {
       "id": 1,
-      "username": "Ashley_Locia",
+      "username": "Jesica_Rivers",
       "productID": 1,
-      "body": "I really love these coffees",
+      "body": "Every dish was a masterpiece. The flavors were bold, balanced, and beautifully presented.",
       "profile": "/images/testimonial-1.jpg"
     },
     {
       "id": 2,
-      "username": "Luca_Brew",
+      "username": "Jasper_Brewster",
       "productID": 2,
-      "body": "The espresso was bold and rich—just how I like it. Great job!",
+      "body": "The ambiance was warm and inviting, and the staff made us feel right at home.",
       "profile": "/images/testimonial-2.jpg"
     },
     {
       "id": 3,
-      "username": "Sofi_Mornings",
+      "username": "Lina_Morn",
       "productID": 3,
-      "body": "This latte is my new morning ritual. Creamy, smooth, and comforting",
+      "body": "I can’t stop thinking about the truffle risotto—creamy, rich, and absolutely divine.",
       "profile": "/images/testimonial-3.jpg"
     },
     {
       "id": 4,
-      "username": "Tomás_R",
+      "username": "Carlos_T",
       "productID": 4,
-      "body": "I wasn’t expecting much, but the cold brew blew me away. Super refreshing!",
+      "body": "From starters to dessert, everything was top-notch. The grilled octopus was a standout!",
       "profile": "/images/testimonial-4.jpg"
     },
     {
       "id": 5,
-      "username": "NinaBean",
+      "username": "Nora_Caffeine",
       "productID": 5,
-      "body": "The mocha had the perfect balance of chocolate and coffee. Loved it!",
+      "body": "Perfect spot for a romantic evening. Candlelit tables, soft music, and exquisite cuisine.",
       "profile": "/images/testimonial-5.jpg"
     },
     {
       "id": 6,
-      "username": "Elena Martínez",
+      "username": "Yon_Martínez",
       "productID": 1,
-      "body": "I ordered the Black Coffee and it was exactly what I needed—strong, smooth, and full of flavor. Definitely coming back for more!",
+      "body": "Service was attentive without being intrusive. I’ll definitely be recommending this place!",
       "profile": "/images/testimonial-6.jpg"
     }
   ],

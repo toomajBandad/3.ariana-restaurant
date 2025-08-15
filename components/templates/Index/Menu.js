@@ -17,10 +17,10 @@ function Menu({ data }) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-2xl font-bold text-gray-800 mb-6">
-              Hot Coffee
+              Pasta
             </h2>
             {data
-              .filter((item) => item.type === "hot")
+              .filter((item) => item.category === "pasta")
               .slice(0, 3)
               .map((item) => (
                 <Card key={item.id} {...item} />
@@ -29,10 +29,10 @@ function Menu({ data }) {
 
           <div>
             <h2 className="text-2xl font-bold text-gray-800 mb-6">
-              Cold Coffee
+              Pizza
             </h2>
             {data
-              .filter((item) => item.type === "cold")
+              .filter((item) => item.category === "pizza")
               .slice(0, 3)
               .map((item) => (
                 <Card key={item.id} {...item} />

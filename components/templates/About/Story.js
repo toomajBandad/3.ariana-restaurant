@@ -40,7 +40,7 @@ function Story() {
           {/* Image */}
           <div className="py-12 lg:py-0 min-h-[500px] relative">
             <img
-              src="/images/about.png"
+              src="/images/about.jpg"
               alt="About Us"
               className="absolute inset-0 w-full h-full object-cover rounded-lg"
             />
