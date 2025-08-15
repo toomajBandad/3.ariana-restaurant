@@ -1,40 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🍽️ Ariana Restaurant — Next.js Project
 
-## Getting Started
+Welcome to the **Ariana Restaurant** web application! This project is built using [Next.js](https://nextjs.org/) and styled with [Tailwind CSS](https://tailwindcss.com/). It features interactive maps via [Leaflet](https://leafletjs.com/) and dynamic UI components powered by [Swiper](https://swiperjs.com/) and [React Icons](https://react-icons.github.io/react-icons/).
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- ⚡ Fast and SEO-friendly Next.js framework  
+- 🎨 Tailwind CSS for modern styling  
+- 🗺️ Leaflet + React Leaflet for map integration  
+- 🧁 Swiper for responsive carousels  
+- 📦 JSON Server for mock API  
+- 🌐 Responsive design across devices  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Tech Stack
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+| Category       | Tools & Libraries                          |
+|----------------|--------------------------------------------|
+| Framework      | Next.js                                    |
+| Styling        | Tailwind CSS, PostCSS, Autoprefixer        |
+| UI Components  | Swiper, React Icons                        |
+| Maps           | Leaflet, React Leaflet                     |
+| API Mocking    | JSON Server                                |
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 📬 Feedback
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+I'd love to hear your thoughts, suggestions, or questions about this project.  
+Feel free to reach out to me at **[tbandad@gmail.com](mailto:tbandad@gmail.com)**.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Made with ❤️ for Ariana Restaurant.
