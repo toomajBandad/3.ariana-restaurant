@@ -31,7 +31,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="absolute top-0 left-0 w-full z-50 text-white bg-trans">
+    <div className="absolute top-0 left-0 w-full z-50 text-white bg-trans px-10">
       <div className="flex justify-between items-center px-6 py-4">
         {/* Logo and Search */}
         <div className="flex items-center gap-4">
@@ -57,19 +57,37 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex gap-6 items-center">
-          {menuItems.map((item) => (
+        {/* Desktop Menu with Dropdown */}
+        <div className="hidden md:flex gap-6 items-center relative">
+          {menuItems.slice(0, 4).map((item) => (
             <Link
               key={item.id}
               href={item.href}
-              className={`hover:text-gray-400 ${
+              className={`hover:text-gray-400 h-full ${
                 route.pathname === item.href ? "font-bold text-lightgold" : ""
               }`}
             >
               {item.name}
             </Link>
           ))}
+
+          {/* Dropdown for extra items */}
+          <div className="group relative text-center">
+            <button className="hover:text-gray-400">More</button>
+            <div className="absolute top-4 right-[-3rem] hidden group-hover:flex flex-col bg-black text-white mt-2 p-2 rounded shadow-lg z-10 min-w-[150px]">
+              {menuItems.slice(4).map((item) => (
+                <Link
+                  key={item.id}
+                  href={item.href}
+                  className={`py-1 px-3 hover:text-lightgold ${
+                    route.pathname === item.href ? "font-bold text-lightgold" : ""
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Mobile Menu Toggle */}

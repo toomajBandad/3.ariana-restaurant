@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 function Offer() {
   const [email, setEmail] = useState("");
@@ -6,17 +7,25 @@ function Offer() {
   const addEmail = async (event) => {
     event.preventDefault();
 
-    const response = await fetch("http://localhost:4000/newsLetters", {
+    const response = await fetch("http://localhost:4000/newsletters", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email }),
+      body: JSON.stringify({ email: email }),
     });
-
-    if (response.status === 201) {
+    if (response.ok) {
       setEmail("");
-      alert("Join Successfully :))");
+      Swal.fire({
+        title: "Join to club successfully!",
+        icon: "success",
+        confirmButtonColor: "#da9f5b",
+      });
+    } else {
+      Swal.fire({
+        title: "Something went wrong!",
+        icon: "error",
+      });
     }
   };
 

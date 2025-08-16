@@ -20,28 +20,26 @@ function Story() {
           <div className="py-0 lg:py-12">
             <h1 className="text-2xl font-bold mb-4">Our Story</h1>
             <h5 className="text-lg text-gray-700 mb-4">
-              Eos kasd eos dolor vero vero, lorem stet diam rebum. Ipsum amet
-              sed vero dolor sea
+              A legacy of flavor, tradition, and community.
             </h5>
             <p className="text-gray-600 mb-4">
-              Takimata sed vero vero no sit sed, justo clita duo no duo amet et,
-              nonumy kasd sed dolor eos diam lorem eirmod. Amet sit amet amet
-              no. Est nonumy sed labore eirmod sit magna. Erat at est justo sit
-              ut. Labor diam sed ipsum et eirmod
+              Our journey began in 1950, when our founders opened a small bakery
+              with a dream: to share the warmth of homemade bread and pastries
+              with their neighbors. Over the decades, we've grown from a single
+              storefront into a cherished institution, known for our dedication
+              to craft, quality, and heartfelt service. Every loaf we bake
+              carries the spirit of tradition and the joy of sharing.
             </p>
-            <a
-              href="#"
-              className="inline-block bg-secondary text-white font-semibold py-2 px-4 rounded hover:bg-secondary-dark transition"
-            >
+            <button className="cursor-pointer inline-block text-black border-1  hover:bg-black hover:text-white font-semibold py-2 px-4 rounded transition">
               Learn More
-            </a>
+            </button>
           </div>
 
           {/* Image */}
           <div className="py-12 lg:py-0 min-h-[500px] relative">
             <img
               src="/images/about.jpg"
-              alt="About Us"
+              alt="Our Bakery"
               className="absolute inset-0 w-full h-full object-cover rounded-lg"
             />
           </div>
@@ -50,31 +48,28 @@ function Story() {
           <div className="py-0 lg:py-12">
             <h1 className="text-2xl font-bold mb-4">Our Vision</h1>
             <p className="text-gray-600 mb-4">
-              Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo
-              dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo.
-              Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-              dolor
+              We envision a future where tradition meets innovation — where
+              every bite connects people to their roots while embracing new
+              possibilities. Our goal is to continue crafting exceptional baked
+              goods, nurturing our community, and inspiring joy through food.
             </p>
             <ul className="space-y-3 mb-4">
               <li className="flex items-center text-gray-700">
                 <i className="fa fa-check text-primary mr-3"></i>
-                Lorem ipsum dolor sit amet
+                Sustainably sourced ingredients
               </li>
               <li className="flex items-center text-gray-700">
                 <i className="fa fa-check text-primary mr-3"></i>
-                Lorem ipsum dolor sit amet
+                Handcrafted recipes passed down generations
               </li>
               <li className="flex items-center text-gray-700">
-                <i className="fa fa-check text-primary mr-3"></i>
-                Lorem ipsum dolor sit amet
+                <i className="fa fa-check text-primary mr-3"></i>A commitment to
+                community and care
               </li>
             </ul>
-            <a
-              href="#"
-              className="inline-block bg-primary text-white font-semibold py-2 px-4 rounded hover:bg-primary-dark transition"
-            >
+            <button className="cursor-pointer inline-block text-black border-1 hover:bg-black hover:text-white font-semibold py-2 px-4 rounded transition">
               Learn More
-            </a>
+            </button>
           </div>
         </div>
       </div>

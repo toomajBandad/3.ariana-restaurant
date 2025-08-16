@@ -23,7 +23,7 @@ function ReservationDetail() {
       alert("Reservation submitted!");
     };
   return (
-    <div className="py-15 bg-white">
+    <div className="pt-15 bg-white">
       <div className=" mx-auto px-4 sm:px-6 lg:px-0">
         <section className=" py-20 px-6 md:px-12">
           <div className="max-w-5xl mx-auto">
@@ -82,7 +82,7 @@ function ReservationDetail() {
             </div>
           </div>
         </section>
-    <div className="py-16 bg-white">
+    <div className="pt-16 bg-white">
       <div className="w-full mx-auto">
         <div
           className="p-40 bg-cover bg-center bg-no-repeat overflow-hidden"

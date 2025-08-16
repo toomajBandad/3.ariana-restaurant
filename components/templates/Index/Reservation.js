@@ -1,26 +1,48 @@
-import React, { useState } from "react";
+import React from "react";
+import { useForm } from "react-hook-form";
 import { FaCheck } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 function Reservation() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    date: "",
-    time: "",
-    person: "",
-  });
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
-  const handleChange = (e) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
+  const onSubmit = async (data, event) => {
+    event.preventDefault();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Reservation submitted:", formData);
-    alert("Reservation submitted!");
+    const response = await fetch("http://localhost:4000/reserve", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ data: data }),
+    });
+
+    if (response.ok) {
+      Swal.fire({
+        title: "Reservation Confirmed!",
+        html: `
+        <p><strong>Name:</strong> ${data.name}</p>
+        <p><strong>Email:</strong> ${data.email}</p>
+        <p><strong>Date:</strong> ${data.date}</p>
+        <p><strong>Time:</strong> ${data.time}</p>
+        <p><strong>Persons:</strong> ${data.person}</p>
+      `,
+        icon: "success",
+        confirmButtonColor: "#da9f5b",
+      });
+
+      reset();
+    } else {
+      Swal.fire({
+        title: "Something went wrong!",
+        icon: "error",
+      });
+    }
   };
 
   return (
@@ -66,59 +88,70 @@ function Reservation() {
             {/* Right Side */}
             <div className="text-white text-center w-full max-w-md">
               <h2 className="text-3xl font-bold mb-6">Book Your Table</h2>
-              <form className="space-y-4" onSubmit={handleSubmit}>
+              <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
                 <input
                   type="text"
-                  name="name"
                   placeholder="Name"
-                  required
-                  value={formData.name}
-                  onChange={handleChange}
+                  {...register("name", { required: true })}
                   className="w-full border border-white bg-transparent px-4 py-3 rounded-md focus:ring-2 focus:ring-[#da9f5b] text-white placeholder-white/70"
-                  aria-label="Name"
                 />
+                {errors.name && (
+                  <span className="text-red-400 text-sm block text-left">
+                    Name is required
+                  </span>
+                )}
+
                 <input
                   type="email"
-                  name="email"
                   placeholder="Email"
-                  required
-                  value={formData.email}
-                  onChange={handleChange}
+                  {...register("email", { required: true })}
                   className="w-full border border-white bg-transparent px-4 py-3 rounded-md focus:ring-2 focus:ring-[#da9f5b] text-white placeholder-white/70"
-                  aria-label="Email"
                 />
+                {errors.email && (
+                  <span className="text-red-400 text-sm block text-left">
+                    Email is required
+                  </span>
+                )}
+
                 <input
                   type="date"
-                  name="date"
-                  value={formData.date}
-                  onChange={handleChange}
+                  {...register("date", { required: true })}
                   className="w-full border border-white bg-transparent px-4 py-3 rounded-md focus:ring-2 focus:ring-[#da9f5b] text-white placeholder-white/70"
-                  aria-label="Date"
                 />
+                {errors.date && (
+                  <span className="text-red-400 text-sm block text-left">
+                    Date is required
+                  </span>
+                )}
+
                 <input
                   type="time"
-                  name="time"
-                  value={formData.time}
-                  onChange={handleChange}
+                  {...register("time", { required: true })}
                   className="w-full border border-white bg-transparent px-4 py-3 rounded-md focus:ring-2 focus:ring-[#da9f5b] text-white placeholder-white/70"
-                  aria-label="Time"
                 />
+                {errors.time && (
+                  <span className="text-red-400 text-sm block text-left">
+                    Time is required
+                  </span>
+                )}
+
                 <select
-                  name="person"
-                  value={formData.person}
-                  onChange={handleChange}
+                  {...register("person", { required: true })}
                   className="w-full border border-white bg-transparent px-4 py-3 rounded-md text-white"
-                  aria-label="Number of Persons"
                 >
-                  <option value="" disabled>
-                    Select number of persons
-                  </option>
+                  <option value="">Select number of persons</option>
                   {[1, 2, 3, 4].map((num) => (
                     <option key={num} value={num} className="bg-gray-800">
                       Person {num}
                     </option>
                   ))}
                 </select>
+                {errors.person && (
+                  <span className="text-red-400 text-sm block text-left">
+                    Number of persons is required
+                  </span>
+                )}
+
                 <button
                   type="submit"
                   className="w-full bg-white mt-5 text-black font-bold py-3 rounded-md transition hover:bg-gray-700 hover:text-[#da9f5b] cursor-pointer"

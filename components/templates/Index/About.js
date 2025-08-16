@@ -18,28 +18,27 @@ function About() {
           <div className="flex flex-col justify-center">
             <h1 className="text-3xl font-bold mb-4">Our Story</h1>
             <h5 className="text-lg font-medium mb-4">
-              Eos kasd eos dolor vero vero, lorem stet diam rebum. Ipsum amet
-              sed vero dolor sea
+              From a humble corner bakery to a beloved community staple.
             </h5>
             <p className="text-gray-700 mb-4">
-              Takimata sed vero vero no sit sed, justo clita duo no duo amet et,
-              nonumy kasd sed dolor eos diam lorem eirmod. Amet sit amet amet
-              no. Est nonumy sed labore eirmod sit magna. Erat at est justo sit
-              ut. Labor diam sed ipsum et eirmod
+              Founded in 1950 by Maria and José Alvarez, our bakery began as a
+              small family-run shop in the heart of Alcalá de Henares. With a
+              passion for traditional recipes and a commitment to quality, we
+              quickly became known for our warm breads, flaky croissants, and
+              unforgettable pastries. Today, three generations later, we
+              continue to bake with the same love and care, using locally
+              sourced ingredients and time-honored techniques.
             </p>
-            <a
-              href="#"
-              className="inline-block bg-secondary text-white font-semibold py-2 px-4 mt-2 rounded hover:bg-secondary-dark transition"
-            >
+            <button className="cursor-pointer inline-block text-black border-1  hover:bg-black hover:text-white font-semibold py-2 px-4 mt-2 rounded transition">
               Learn More
-            </a>
+            </button>
           </div>
 
           {/* Image */}
           <div className="relative min-h-[500px]">
             <img
               src="/images/about.jpg"
-              alt="About"
+              alt="Our Bakery"
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
@@ -48,31 +47,29 @@ function About() {
           <div className="flex flex-col justify-center">
             <h1 className="text-3xl font-bold mb-4">Our Vision</h1>
             <p className="text-gray-700 mb-4">
-              Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo
-              dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo.
-              Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-              dolor
+              We believe in the power of food to bring people together. Our
+              vision is to preserve the art of baking while embracing innovation
+              and sustainability. We aim to be more than a bakery — a place
+              where memories are made, traditions are honored, and every bite
+              tells a story.
             </p>
             <ul className="space-y-3 mb-4">
               <li className="flex items-center">
                 <i className="fa fa-check text-primary mr-3"></i>
-                <span>Lorem ipsum dolor sit amet</span>
+                <span>Handcrafted baked goods made daily</span>
               </li>
               <li className="flex items-center">
                 <i className="fa fa-check text-primary mr-3"></i>
-                <span>Lorem ipsum dolor sit amet</span>
+                <span>Locally sourced, organic ingredients</span>
               </li>
               <li className="flex items-center">
                 <i className="fa fa-check text-primary mr-3"></i>
-                <span>Lorem ipsum dolor sit amet</span>
+                <span>Committed to sustainability and community</span>
               </li>
             </ul>
-            <a
-              href="#"
-              className="inline-block bg-primary text-white font-semibold py-2 px-4 mt-2 rounded hover:bg-primary-dark transition"
-            >
+            <button className="cursor-pointer inline-block text-black border-1  hover:bg-black hover:text-white font-semibold py-2 px-4 mt-2 rounded transition">
               Learn More
-            </a>
+            </button>
           </div>
         </div>
       </div>

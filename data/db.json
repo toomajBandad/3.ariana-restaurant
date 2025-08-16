@@ -1,7 +1,7 @@
 {
   "menu": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Truffle Tagliatelle",
       "price": 14.5,
       "desc": "Silky tagliatelle tossed in a creamy truffle sauce with wild mushrooms.",
@@ -11,9 +11,9 @@
       "img": "/images/pasta/truffle.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Spicy Arrabbiata",
-      "price": 11.0,
+      "price": 11,
       "desc": "Penne in a fiery tomato and garlic sauce, finished with fresh basil.",
       "score": 4.4,
       "off": 0,
@@ -21,9 +21,9 @@
       "img": "/images/pasta/arrabbiata.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Carbonara Classico",
-      "price": 13.0,
+      "price": 13,
       "desc": "Authentic Roman recipe with guanciale, egg yolk, Pecorino Romano, no cream.",
       "score": 4.8,
       "off": 15,
@@ -31,9 +31,9 @@
       "img": "/images/pasta/carbonara.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Pesto Genovese",
-      "price": 12.0,
+      "price": 12,
       "desc": "Fresh basil pesto over trofie pasta, garnished with pine nuts and Parmigiano.",
       "score": 4.5,
       "off": 5,
@@ -41,9 +41,9 @@
       "img": "/images/pasta/pesto.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Lobster Linguine",
-      "price": 18.0,
+      "price": 18,
       "desc": "Linguine with chunks of lobster in a garlic white wine sauce.",
       "score": 4.8,
       "off": 20,
@@ -51,7 +51,7 @@
       "img": "/images/pasta/lobster.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Pumpkin Ravioli",
       "price": 13.5,
       "desc": "Handmade ravioli filled with roasted pumpkin, served in sage butter sauce.",
@@ -61,9 +61,9 @@
       "img": "/images/pasta/pumpkin.jpg"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Margherita",
-      "price": 9.0,
+      "price": 9,
       "desc": "Classic Neapolitan pizza with San Marzano tomatoes, mozzarella, and fresh basil.",
       "score": 4.7,
       "off": 5,
@@ -71,7 +71,7 @@
       "img": "/images/pizza/margherita.jpg"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Pepperoni Inferno",
       "price": 11.5,
       "desc": "Loaded with spicy pepperoni, mozzarella, and a touch of chili oil.",
@@ -81,9 +81,9 @@
       "img": "/images/pizza/pepperoni.jpg"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Quattro Formaggi",
-      "price": 12.0,
+      "price": 12,
       "desc": "A rich blend of mozzarella, gorgonzola, Parmigiano, and fontina cheeses.",
       "score": 4.8,
       "off": 0,
@@ -91,7 +91,7 @@
       "img": "/images/pizza/quattro.jpg"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Veggie Supreme",
       "price": 10.5,
       "desc": "Topped with bell peppers, olives, onions, mushrooms, and zucchini.",
@@ -101,9 +101,9 @@
       "img": "/images/pizza/veggie.jpg"
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Prosciutto e Rucola",
-      "price": 13.0,
+      "price": 13,
       "desc": "Thinly sliced prosciutto with fresh arugula and shaved Parmigiano.",
       "score": 4.9,
       "off": 7,
@@ -111,7 +111,7 @@
       "img": "/images/pizza/prosciutto.jpg"
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "BBQ Chicken",
       "price": 12.5,
       "desc": "Grilled chicken, smoky BBQ sauce, red onions, and mozzarella.",
@@ -121,9 +121,9 @@
       "img": "/images/pizza/bbq.jpg"
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Grilled Salmon",
-      "price": 17.0,
+      "price": 17,
       "desc": "Fresh Atlantic salmon grilled to perfection with lemon herb butter.",
       "score": 4.8,
       "off": 10,
@@ -131,7 +131,7 @@
       "img": "/images/seafood/salmon.jpg"
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Garlic Butter Shrimp",
       "price": 15.5,
       "desc": "Succulent shrimp sautéed in garlic butter and white wine sauce.",
@@ -141,9 +141,9 @@
       "img": "/images/seafood/shrimp.jpg"
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "Seafood Paella",
-      "price": 19.0,
+      "price": 19,
       "desc": "Traditional Spanish rice dish with mussels, clams, shrimp, and squid.",
       "score": 4.9,
       "off": 0,
@@ -151,7 +151,7 @@
       "img": "/images/seafood/paella.jpg"
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Lemon Pepper Calamari",
       "price": 13.5,
       "desc": "Crispy fried calamari tossed in lemon zest and cracked black pepper.",
@@ -161,9 +161,9 @@
       "img": "/images/seafood/calamari.jpg"
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "Tuna Tartare",
-      "price": 16.0,
+      "price": 16,
       "desc": "Diced raw tuna with avocado, sesame oil, and soy-lime dressing.",
       "score": 4.7,
       "off": 6,
@@ -171,7 +171,7 @@
       "img": "/images/seafood/tartare.jpg"
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "Crab Linguine",
       "price": 18.5,
       "desc": "Linguine tossed with sweet crab meat, garlic, chili, and olive oil.",
@@ -181,7 +181,7 @@
       "img": "/images/seafood/crab.jpg"
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "Tiramisu",
       "price": 6.5,
       "desc": "Classic Italian dessert with layers of espresso-soaked ladyfingers and mascarpone cream.",
@@ -191,9 +191,9 @@
       "img": "/images/dessert/tiramisu.jpg"
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Chocolate Lava Cake",
-      "price": 7.0,
+      "price": 7,
       "desc": "Warm chocolate cake with a gooey molten center, served with vanilla ice cream.",
       "score": 4.8,
       "off": 5,
@@ -201,7 +201,7 @@
       "img": "/images/dessert/lava.jpg"
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "Lemon Tart",
       "price": 5.5,
       "desc": "Zesty lemon curd in a buttery shortcrust pastry, topped with powdered sugar.",
@@ -211,9 +211,9 @@
       "img": "/images/dessert/lemon.jpg"
     },
     {
-      "id": 22,
+      "id": "22",
       "title": "Strawberry Cheesecake",
-      "price": 6.0,
+      "price": 6,
       "desc": "Creamy cheesecake with a graham cracker crust and fresh strawberry topping.",
       "score": 4.7,
       "off": 7,
@@ -221,7 +221,7 @@
       "img": "/images/dessert/cheesecake.jpg"
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "Pistachio Gelato",
       "price": 4.5,
       "desc": "Rich and nutty pistachio gelato made with authentic Sicilian pistachios.",
@@ -231,7 +231,7 @@
       "img": "/images/dessert/gelato.jpg"
     },
     {
-      "id": 24,
+      "id": "24",
       "title": "Crème Brûlée",
       "price": 6.8,
       "desc": "Silky vanilla custard with a crisp caramelized sugar top.",
@@ -241,7 +241,7 @@
       "img": "/images/dessert/brulee.jpg"
     },
     {
-      "id": 25,
+      "id": "25",
       "title": "Club Sandwich",
       "price": 8.5,
       "desc": "Triple-layered sandwich with turkey, bacon, lettuce, tomato, and mayo on toasted bread.",
@@ -251,9 +251,9 @@
       "img": "/images/sandwich/club.jpg"
     },
     {
-      "id": 26,
+      "id": "26",
       "title": "Caprese Panini",
-      "price": 7.0,
+      "price": 7,
       "desc": "Grilled ciabatta filled with fresh mozzarella, tomatoes, basil, and balsamic glaze.",
       "score": 4.5,
       "off": 5,
@@ -261,7 +261,7 @@
       "img": "/images/sandwich/caprese.jpg"
     },
     {
-      "id": 27,
+      "id": "27",
       "title": "Philly Cheesesteak",
       "price": 9.5,
       "desc": "Thinly sliced beef, sautéed onions, and melted provolone on a hoagie roll.",
@@ -271,7 +271,7 @@
       "img": "/images/sandwich/philly.jpg"
     },
     {
-      "id": 28,
+      "id": "28",
       "title": "Falafel Wrap",
       "price": 7.5,
       "desc": "Crispy falafel with hummus, lettuce, tomato, and tahini sauce in a warm pita.",
@@ -281,7 +281,7 @@
       "img": "/images/sandwich/falafel.jpg"
     },
     {
-      "id": 29,
+      "id": "29",
       "title": "Pulled Pork Sandwich",
       "price": 8.8,
       "desc": "Slow-cooked pulled pork with BBQ sauce and coleslaw on a brioche bun.",
@@ -291,9 +291,9 @@
       "img": "/images/sandwich/pulledpork.jpg"
     },
     {
-      "id": 30,
+      "id": "30",
       "title": "Eggplant Parm Sub",
-      "price": 8.0,
+      "price": 8,
       "desc": "Breaded eggplant slices with marinara and melted mozzarella on a toasted sub roll.",
       "score": 4.5,
       "off": 4,
@@ -303,28 +303,28 @@
   ],
   "services": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Express Table Service",
       "desc": "Enjoy swift and attentive service from our trained staff, ensuring a seamless dining experience.",
       "img": "/images/service-1.jpg",
       "icon": "MdOutlineRoomService"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Farm-to-Table Ingredients",
       "desc": "We partner with local farms to bring you fresh, organic produce in every dish.",
       "img": "/images/service-2.jpg",
       "icon": "MdAgriculture"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Gourmet Chef Specials",
       "desc": "Indulge in exclusive creations from our award-winning chefs, updated weekly.",
       "img": "/images/service-3.jpg",
       "icon": "MdRestaurantMenu"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Live Music Nights",
       "desc": "Join us every weekend for live performances that elevate your dining experience.",
       "img": "/images/service-4.jpg",
@@ -333,52 +333,52 @@
   ],
   "newsletters": [
     {
-      "id": 2,
-      "email": "amin@gmail.com"
+      "id": "9266",
+      "email": "toomaj@gmail.com"
     },
     {
-      "id": 1,
-      "email": "amin@gmail.com"
+      "id": "cfaf",
+      "email": "test@gmail.com"
     }
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "username": "Jesica_Rivers",
       "productID": 1,
       "body": "Every dish was a masterpiece. The flavors were bold, balanced, and beautifully presented.",
       "profile": "/images/testimonial-1.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "Jasper_Brewster",
       "productID": 2,
       "body": "The ambiance was warm and inviting, and the staff made us feel right at home.",
       "profile": "/images/testimonial-2.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "username": "Lina_Morn",
       "productID": 3,
       "body": "I can’t stop thinking about the truffle risotto—creamy, rich, and absolutely divine.",
       "profile": "/images/testimonial-3.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "username": "Carlos_T",
       "productID": 4,
       "body": "From starters to dessert, everything was top-notch. The grilled octopus was a standout!",
       "profile": "/images/testimonial-4.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "username": "Nora_Caffeine",
       "productID": 5,
       "body": "Perfect spot for a romantic evening. Candlelit tables, soft music, and exquisite cuisine.",
       "profile": "/images/testimonial-5.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "username": "Yon_Martínez",
       "productID": 1,
       "body": "Service was attentive without being intrusive. I’ll definitely be recommending this place!",
@@ -391,43 +391,64 @@
       "email": "isabel.cruz@example.com",
       "subject": "Inquiry about delivery times",
       "body": "Hi, I placed an order yesterday and was wondering how long it usually takes to arrive in Madrid. Thanks!",
-      "id": 1
+      "id": "1"
     },
     {
       "username": "MarcoVino",
       "email": "marco.vino@example.com",
       "subject": "Issue with payment",
       "body": "Hello, I tried to pay with my card but it keeps getting declined. Can you help me resolve this?",
-      "id": 2
+      "id": "2"
     },
     {
       "username": "Lena_Art",
       "email": "lena.art@example.com",
       "subject": "Feedback on your espresso",
       "body": "Just wanted to say your espresso is phenomenal. Rich, smooth, and exactly what I needed this morning!",
-      "id": 3
+      "id": "3"
     },
     {
       "username": "Tomás_R",
       "email": "tomas.r@example.com",
       "subject": "Request for invoice",
       "body": "Could you please send me the invoice for my last order? I need it for my records.",
-      "id": 4
+      "id": "4"
     },
     {
       "username": "NinaBean",
       "email": "nina.bean@example.com",
       "subject": "Suggestion for new flavors",
       "body": "Have you considered adding hazelnut or coconut to your menu? I think they'd be a hit!",
-      "id": 5
+      "id": "5"
     },
     {
       "username": "Elena Martínez",
       "email": "elena.martinez@example.com",
       "subject": "Loved the Black Coffee!",
       "body": "Just wanted to say thank you—the Black Coffee was perfect. I’ll definitely be ordering again soon.",
-      "id": 6
+      "id": "6"
     }
   ],
-  "reserve": [{}]
+  "reserve": [
+    {
+      "id": "c859",
+      "data": {
+        "name": "Toomaj",
+        "email": "tbandad@gmail.com",
+        "date": "2006-12-18",
+        "time": "10:30",
+        "person": "2"
+      }
+    },
+    {
+      "id": "acc5",
+      "data": {
+        "name": "Zahra@zizi.Email.com",
+        "email": "zizi@gmali.com",
+        "date": "2005-08-10",
+        "time": "23:00",
+        "person": "3"
+      }
+    }
+  ]
 }
