@@ -10,6 +10,8 @@ Welcome to the **Ariana Restaurant** web application! This project is built usin
 - 🧁 Swiper for responsive carousels  
 - 📦 JSON Server for mock API  
 - 🌐 Responsive design across devices  
+- 📬 Contact form with validation via React Hook Form  
+- 💬 SweetAlert2 for elegant alerts and modals 
 
 ## 📦 Tech Stack
 
@@ -17,12 +19,22 @@ Welcome to the **Ariana Restaurant** web application! This project is built usin
 |----------------|--------------------------------------------|
 | Framework      | Next.js                                    |
 | Styling        | Tailwind CSS, PostCSS, Autoprefixer        |
-| UI Components  | Swiper, React Icons                        |
+| UI Components  | Swiper, React Icons, SweetAlert2           |
 | Maps           | Leaflet, React Leaflet                     |
+| Forms          | React Hook Form                            |
 | API Mocking    | JSON Server                                |
 
-## 📬 Feedback
+## 🛠️ Getting Started
+Run Server : npm run server
+Run Project : npm run dev
 
+### Clone the repository
+
+git clone https://github.com/your-username/3.ariana-restaurant.git
+cd 3.ariana-restaurant
+                            |
+
+## 📬 Feedback
 I'd love to hear your thoughts, suggestions, or questions about this project.  
 Feel free to reach out to me at **[tbandad@gmail.com](mailto:tbandad@gmail.com)**.
 
