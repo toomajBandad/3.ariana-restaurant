@@ -1,35 +1,37 @@
+import React from "react";
+import { useForm } from "react-hook-form";
 import MapLeaflet from "@/components/modules/MapLeaflet/MapLeaflet";
-import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 function ContactDetails() {
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [body, setBody] = useState("");
-  const [success, setSuccess] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitSuccessful },
+  } = useForm();
 
-  const addMessage = async (event) => {
-    event.preventDefault();
-    setSuccess(false);
-
-    const message = { username, email, subject, body };
-
+  const addMessage = async (data) => {
     try {
       const res = await fetch("http://localhost:4000/messages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(message),
+        body: JSON.stringify(data),
       });
 
-      if (res.status === 201) {
-        setUsername("");
-        setEmail("");
-        setSubject("");
-        setBody("");
-        setSuccess(true);
+      if (res.ok) {
+        Swal.fire({
+          title: "Your message sent successfully !",
+          icon: "success",
+          confirmButtonColor: "#da9f5b",
+        });
+        reset(); // clears the form
       }
     } catch (error) {
-      console.error("Error sending message:", error);
+      Swal.fire({
+        title: "Something went wrong!",
+        icon: "error",
+      });
     }
   };
 
@@ -66,60 +68,67 @@ function ContactDetails() {
         </div>
 
         {/* Contact Form & Map */}
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-12">
           <MapLeaflet />
 
           {/* Form */}
-          <form onSubmit={addMessage} className="space-y-6">
+          <form onSubmit={handleSubmit(addMessage)} className="space-y-6">
             <input
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              {...register("username", { required: "Name is required" })}
               type="text"
               placeholder="Your Name"
-              required
               aria-label="Your Name"
               className="w-full border border-gray-300 px-4 py-3 rounded-md focus:ring-2 text-black focus:outline-none"
             />
+            {errors.username && (
+              <p className="text-red-500 text-sm">{errors.username.message}</p>
+            )}
+
             <input
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              {...register("email", {
+                required: "Email is required",
+                pattern: {
+                  value: /^\S+@\S+$/i,
+                  message: "Invalid email address",
+                },
+              })}
               type="email"
               placeholder="Your Email"
-              required
               aria-label="Your Email"
               className="w-full border border-gray-300 px-4 py-3 rounded-md focus:ring-2 text-black focus:outline-none"
             />
+            {errors.email && (
+              <p className="text-red-500 text-sm">{errors.email.message}</p>
+            )}
+
             <input
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
+              {...register("subject", { required: "Subject is required" })}
               type="text"
               placeholder="Subject"
-              required
               aria-label="Subject"
               className="w-full border border-gray-300 px-4 py-3 rounded-md focus:ring-2 text-black focus:outline-none"
             />
+            {errors.subject && (
+              <p className="text-red-500 text-sm">{errors.subject.message}</p>
+            )}
+
             <textarea
-              value={body}
-              onChange={(e) => setBody(e.target.value)}
+              {...register("body", { required: "Message is required" })}
               rows="5"
               placeholder="Message"
-              required
               aria-label="Message"
               className="w-full border border-gray-300 px-4 py-3 rounded-md focus:ring-2 text-black focus:outline-none"
             ></textarea>
+            {errors.body && (
+              <p className="text-red-500 text-sm">{errors.body.message}</p>
+            )}
+
             <button
               type="submit"
               className="bg-gray-600 text-white cursor-pointer font-bold py-3 px-6 rounded-md hover:bg-gray-700 transition duration-200"
             >
               Send Message
             </button>
-
-            {success && (
-              <p className="text-green-600 font-medium mt-4">
-                ✅ Message sent successfully!
-              </p>
-            )}
           </form>
         </div>
       </div>

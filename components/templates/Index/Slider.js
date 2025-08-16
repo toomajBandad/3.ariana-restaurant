@@ -15,15 +15,7 @@ function Slider() {
       align: "center",
       justify: "start",
     },
-    {
-      id: 2,
-      url: "/images/carousel-2.jpg",
-      uptitle: "Crafting culinary memories",
-      mainTitle: "ARIANA",
-      subtitle: "SINCE 1986",
-      align: "start",
-      justify: "start",
-    },
+
     {
       id: 3,
       url: "/images/carousel-3.jpg",
@@ -50,6 +42,15 @@ function Slider() {
       subtitle: "SINCE 1986",
       align: "center",
       justify: "center",
+    },
+    {
+      id: 2,
+      url: "/images/carousel-2.jpg",
+      uptitle: "Crafting culinary memories",
+      mainTitle: "ARIANA",
+      subtitle: "SINCE 1986",
+      align: "start",
+      justify: "start",
     },
   ];
 

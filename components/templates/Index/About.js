@@ -20,7 +20,7 @@ function About() {
             <h5 className="text-lg font-medium mb-4">
               From a humble corner bakery to a beloved community staple.
             </h5>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 mb-4 text-justify">
               Founded in 1950 by Maria and José Alvarez, our bakery began as a
               small family-run shop in the heart of Alcalá de Henares. With a
               passion for traditional recipes and a commitment to quality, we
@@ -29,9 +29,11 @@ function About() {
               continue to bake with the same love and care, using locally
               sourced ingredients and time-honored techniques.
             </p>
-            <button className="cursor-pointer inline-block text-black border-1  hover:bg-black hover:text-white font-semibold py-2 px-4 mt-2 rounded transition">
-              Learn More
-            </button>
+            <div>
+              <button className="cursor-pointer inline-block text-black border-1  hover:bg-black hover:text-white font-semibold py-2 px-4 mt-5 rounded transition">
+                Learn More
+              </button>
+            </div>
           </div>
 
           {/* Image */}
@@ -46,7 +48,7 @@ function About() {
           {/* Our Vision */}
           <div className="flex flex-col justify-center">
             <h1 className="text-3xl font-bold mb-4">Our Vision</h1>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 mb-4 text-justify">
               We believe in the power of food to bring people together. Our
               vision is to preserve the art of baking while embracing innovation
               and sustainability. We aim to be more than a bakery — a place
@@ -67,9 +69,11 @@ function About() {
                 <span>Committed to sustainability and community</span>
               </li>
             </ul>
-            <button className="cursor-pointer inline-block text-black border-1  hover:bg-black hover:text-white font-semibold py-2 px-4 mt-2 rounded transition">
-              Learn More
-            </button>
+            <div>
+              <button className="cursor-pointer inline-block text-black border-1  hover:bg-black hover:text-white font-semibold py-2 px-4 mt-5 rounded transition">
+                Learn More
+              </button>
+            </div>
           </div>
         </div>
       </div>

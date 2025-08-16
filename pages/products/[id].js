@@ -9,17 +9,23 @@ const Product = ({ product, comments }) => {
       <PageHeader route="Dish Details" bg="/images/darkTop.png" />
 
       {/* Product Details Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-white rounded-xl shadow-lg p-8">
-          <ProductsDetails data={product} />
-        </div>
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+        <ProductsDetails data={product} />
       </section>
 
       {/* Comments Section */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-300">
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-gray-300">
         <div className="bg-white rounded-xl shadow-md p-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">Customer Reviews</h2>
-          <Comments data={comments} />
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">
+            Customer Reviews
+          </h2>
+          {comments.length === 0 ? (
+            <p className="text-gray-600">
+              No reviews yet. Be the first to comment!
+            </p>
+          ) : (
+            <Comments data={comments} />
+          )}
         </div>
       </section>
     </main>

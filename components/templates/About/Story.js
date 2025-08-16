@@ -22,7 +22,7 @@ function Story() {
             <h5 className="text-lg text-gray-700 mb-4">
               A legacy of flavor, tradition, and community.
             </h5>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 text-justify">
               Our journey began in 1950, when our founders opened a small bakery
               with a dream: to share the warmth of homemade bread and pastries
               with their neighbors. Over the decades, we've grown from a single
@@ -30,9 +30,11 @@ function Story() {
               to craft, quality, and heartfelt service. Every loaf we bake
               carries the spirit of tradition and the joy of sharing.
             </p>
-            <button className="cursor-pointer inline-block text-black border-1  hover:bg-black hover:text-white font-semibold py-2 px-4 rounded transition">
-              Learn More
-            </button>
+            <div>
+              <button className="cursor-pointer inline-block text-black border-1  hover:bg-black hover:text-white font-semibold py-2 px-4 mt-5 rounded transition">
+                Learn More
+              </button>
+            </div>
           </div>
 
           {/* Image */}
@@ -47,7 +49,7 @@ function Story() {
           {/* Our Vision */}
           <div className="py-0 lg:py-12">
             <h1 className="text-2xl font-bold mb-4">Our Vision</h1>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 text-justify">
               We envision a future where tradition meets innovation — where
               every bite connects people to their roots while embracing new
               possibilities. Our goal is to continue crafting exceptional baked
@@ -67,9 +69,11 @@ function Story() {
                 community and care
               </li>
             </ul>
-            <button className="cursor-pointer inline-block text-black border-1 hover:bg-black hover:text-white font-semibold py-2 px-4 rounded transition">
-              Learn More
-            </button>
+            <div>
+              <button className="cursor-pointer inline-block text-black border-1 hover:bg-black hover:text-white font-semibold py-2 px-4 mt-5 rounded transition">
+                Learn More
+              </button>
+            </div>
           </div>
         </div>
       </div>
